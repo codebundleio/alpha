@@ -1,0 +1,16 @@
+{% if required -%}
+  <div class="form-group">
+    <label class="label control-label required">{{text}}</label>
+    <input type="text" required="required">
+  </div>
+{% elif disabled -%}
+  <div class="form-group">
+    <label class="label control-label">{{text}}</label>
+    <input type="text" disabled="disabled">
+  </div>
+{% else %}
+  <div class="form-group">
+    <label class="label control-label">{{text}}</label>
+    <input type="text">
+  </div>
+{% endif -%}

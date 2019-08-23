@@ -1,0 +1,16 @@
+{% if required -%}
+  <div class="form-group">
+    <label class="label control-label required">{{text}}</label>
+    <div class="timepicker-range" data-required="required" data-name-start="time_start_required" data-name-end="time_end_required"></div>
+  </div>
+{% elif disabled -%}
+  <div class="form-group">
+    <label class="label control-label">{{text}}</label>
+    <div class="timepicker-range" data-disabled="true" data-name-start="time_start_disabled" data-name-end="time_end_disabled"></div>
+  </div>
+{% else %}
+  <div class="form-group">
+    <label class="label control-label">{{text}}</label>
+    <div class="timepicker-range" data-min="10:00" data-max="18:00" data-name-start="time_start" data-name-end="time_end"></div>
+  </div>
+{% endif -%}

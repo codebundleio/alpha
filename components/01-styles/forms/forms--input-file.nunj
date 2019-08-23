@@ -1,0 +1,16 @@
+{% if required -%}
+  <div class="form-group">
+    <label class="label control-label required">{{text}}</label>
+    <div class="filepicker" data-required="required"></div>
+  </div>
+{% elif disabled -%}
+  <div class="form-group">
+    <label class="label control-label">{{text}}</label>
+    <div class="filepicker" data-disabled=true></div>
+  </div>
+{% else %}
+  <div class="form-group">
+    <label class="label control-label">{{text}}</label>
+    <div class="filepicker" data-multiple="true" data-accept="image/*"></div>
+  </div>
+{% endif -%}

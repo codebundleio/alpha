@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col-6">
+    <p class="preview-section-title">Default state</p>
+
+    {% render '@forms--input-text', { text: 'Text Input' } -%}
+    {% render '@forms--input-time', { text: 'Time Input' } -%}
+    {% render '@forms--input-timerange', { text: 'Time Range Input' } -%}
+    {% render '@forms--input-file', { text: 'File Input' }  -%}
+    {% render '@forms--textarea', { text: 'Textarea' }  -%}
+    <div class="form-group">
+      <p class="label control-label">Grupo de checkboxes</p>
+      {% render '@forms--checkbox', { text: 'Checkbox 1' }  -%}
+      {% render '@forms--checkbox', { text: 'Checkbox 2' }  -%}
+      {% render '@forms--checkbox', { text: 'Checkbox 3' }  -%}
+    </div>
+    <div class="form-group">
+      <p class="label control-label">Grupo de radiobuttons</p>
+      {% render '@forms--radio', { text: 'Radio button 1', group: "radio" }  -%}
+      {% render '@forms--radio', { text: 'Radio button 2', group: "radio" }  -%}
+      {% render '@forms--radio', { text: 'Radio button 3', group: "radio" }  -%}
+    </div>
+  </div>
+
+  <div class="col-6">
+    <p class="preview-section-title">Disabled state</p>
+
+    {% render '@forms--input-text', { text: 'Text Input disabled', disabled: true } -%}
+    {% render '@forms--input-time', { text: 'Time Input disabled', disabled: true } -%}
+    {% render '@forms--input-timerange', { text: 'Time Range Input disabled', disabled: true } -%}
+    {% render '@forms--input-file', { text: 'File Input disabled', disabled: true }  -%}
+    {% render '@forms--textarea', { text: 'Textarea disabled', disabled: true }  -%}
+    <div class="form-group">
+      <p class="label control-label">Grupo de checkboxes</p>
+      <div class="form-check">
+        <input type="checkbox" id="Checkbox 1 disabled" disabled="disabled" checked="checked">
+        <label for="Checkbox 1 disabled">{{text}}</label>
+      </div>
+      {% render '@forms--checkbox', { text: 'Checkbox 2 disabled', disabled: true }  -%}
+      {% render '@forms--checkbox', { text: 'Checkbox 3 disabled', disabled: true }  -%}
+    </div>
+    <div class="form-group">
+      <p class="label control-label">Grupo de radiobuttons</p>
+      <div class="form-radio">
+        <input type="radio" id="Radio button 1 disabled" name="radio_disabled" disabled="disabled" checked="cheked">
+        <label for="Radio button 1 disabled">{{text}}</label>
+      </div>
+      {% render '@forms--radio', { text: 'Radio button 2 disabled', group: "radio_disabled", disabled: true }  -%}
+      {% render '@forms--radio', { text: 'Radio button 3 disabled', group: "radio_disabled", disabled: true }  -%}
+    </div>
+  </div>
+</div>

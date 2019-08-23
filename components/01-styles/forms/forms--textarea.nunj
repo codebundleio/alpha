@@ -1,0 +1,12 @@
+{% if disabled -%}
+  <div class="form-group">
+    <label class="label control-label">{{text}}</label>
+    <textarea disabled="disabled"></textarea>
+  </div>
+
+{% else %}
+  <div class="form-group">
+    <label class="label control-label">{{text}}</label>
+    <textarea></textarea>
+  </div>
+{% endif -%}

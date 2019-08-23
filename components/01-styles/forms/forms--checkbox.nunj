@@ -1,0 +1,11 @@
+{% if disabled -%}
+  <div class="form-check">
+    <input type="checkbox" id="{{text}}" disabled="disabled">
+    <label for="{{text}}">{{text}}</label>
+  </div>
+{% else %}
+  <div class="form-check">
+    <input type="checkbox" id="{{text}}">
+    <label for="{{text}}">{{text}}</label>
+  </div>
+{% endif -%}
