@@ -1,7 +1,5 @@
 const path = require('path');
-const webpack = require('webpack');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
-const jsonImporter = require('node-sass-json-importer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
@@ -31,7 +29,7 @@ module.exports = {
         },
       },
       {
-        test: /\.scss$/,
+        test: /\.(scss|sass)$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
@@ -48,8 +46,7 @@ module.exports = {
               loader: 'sass-loader',
               options: {
                 sourceMap: true,
-                includePaths: ['node_modules'],
-                importer: jsonImporter,
+                includePaths: ['node_modules']
               },
             },
           ],

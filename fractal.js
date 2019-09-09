@@ -12,7 +12,7 @@ const mandelbrot = require('@frctl/mandelbrot');
 /**
  * Metadata
  */
-fractal.set('project.title', 'Codebundle.io styleguide');
+fractal.set('project.title', 'Codebundle.io\'s Styleguide');
 // Provide the package.json "version" to the templates
 fractal.set('project.version', pkg.version);
 
@@ -55,18 +55,18 @@ fractal.web.set('server.sync', true);
  */
 const bluebird = require('bluebird');
 bluebird.config({
-  warnings: false
+  warnings: false,
 });
 
 /**
  * Theme
  */
 const customTheme = mandelbrot({
-  skin: "navy",
-  nav: ["docs", "components"],
-  panels: ["html", "resources", "info", "notes"],
-  styles: ["default", "/custom-theme.css"],
-  scripts: ["default", "/custom-theme.js"]
+  skin: 'navy',
+  nav: ['docs', 'components'],
+  panels: ['html', 'resources', 'info', 'notes'],
+  styles: ['default', '/custom-theme.css'],
+  scripts: ['default', '/custom-theme.js'],
 });
 
 fractal.web.theme(customTheme);
