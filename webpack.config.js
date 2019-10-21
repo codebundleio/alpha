@@ -10,8 +10,7 @@ module.exports = {
     extensions: ['.mjs', '.js'],
   },
   entry: {
-    base: path.resolve(__dirname, 'assets/scripts/base.js'),
-    'custom-theme': path.resolve(__dirname, 'assets/scripts/custom-theme.js'),
+    base: path.resolve(__dirname, 'assets/scripts/base.js')
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -46,7 +45,7 @@ module.exports = {
               loader: 'sass-loader',
               options: {
                 sourceMap: true,
-                includePaths: ['node_modules']
+                includePaths: ['node_modules'],
               },
             },
           ],

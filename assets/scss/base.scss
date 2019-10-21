@@ -1,15 +1,7 @@
 $fa-font-size-base: 18px;
 $fa-font-path: '/assets';
 
-// Import Quicksand font from Google Fonts
-@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700");
-
 @import "~font-awesome/scss/font-awesome";
 @import "~bulma/bulma";
 
 @import "./base/typography";
-
-.input {
-  font-family: 'Quicksand', Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight: 500;
-}

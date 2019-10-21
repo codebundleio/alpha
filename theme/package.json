@@ -1,0 +1,68 @@
+{
+  "name": "alpha-theme",
+  "version": "0.1.0",
+  "description": "Fractal Madelbrot theme customized for Alpha documentation.",
+  "keywords": [
+    "styleguide",
+    "patterns",
+    "design-system",
+    "web-components",
+    "web-elements"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier-eslint --write 'assets/**/*.js'",
+    "check-code": "eslint 'assets/**/*.js' && prettier-eslint --list-different 'assets/**/*.js'",
+    "build": "npm run build:css && npm run build:webpack",
+    "build:webpack": "NODE_ENV=production webpack",
+    "build:css": "node-sass --include-path 'node_modules' --output-style compressed -o dist/css assets/scss/theme.scss"
+  },
+  "author": "Iván González",
+  "license": "MIT",
+  "dependencies": {
+    "@frctl/mandelbrot": "1.2.1",
+    "jquery": "3.4.1",
+    "node-sass": "4.12.0",
+    "normalize.css": "8.0.1",
+    "sass-mq": "5.0.1",
+    "select2": "4.0.11"
+  },
+  "directories": {
+    "lib": "dist"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@frctl/fractal": "^1.1.7",
+    "@frctl/nunjucks": "^2.0.1",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.4",
+    "core-js": "^3.2.1",
+    "eslint": "^6.2.1",
+    "eslint-plugin-babel": "^5.3.0",
+    "highlight.js": "^9.12.0",
+    "node-sass": "^4.12.0",
+    "prettier-eslint-cli": "^5.0.0",
+    "webpack": "^4.39.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "loose": true,
+          "modules": false,
+          "useBuiltIns": "usage",
+          "corejs": {
+            "version": "3"
+          }
+        }
+      ]
+    ]
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%"
+  ]
+}

@@ -1,0 +1,35 @@
+// $font-family-monospace: Hack, Consolas, Monaco, "Andale Mono", monospace;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont,
+                         "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+                         "Fira Sans", "Droid Sans", "Helvetica Neue";
+
+$color-link: blue;
+$color-text: #46515e;
+$color-heading: #303841;
+
+// $color-background: #fff;
+$color-background-offset: #f7f8f9;
+
+// $color-ui-hover: rgba($color-text, 0.05);
+// $color-ui-active: rgba($color-text, 0.075);
+
+$color-header-background:#845EC2;
+$color-header-background-2:#D65DB1;
+$color-header-background-3:#FF6F91;
+$color-header-background-4:#FF9671;
+$color-header-background-5:#FFC75F;
+$color-header-background-6:#F9F871;
+
+// $color-frame-border: rgba($color-text, 0.25);
+
+$color-sidebar-heading: white;
+
+$width-sidebar: 240px;
+$handle-size: 0.625rem;
+
+$mq-breakpoints: (
+  navCollapse: 500px,
+  small: 450px,
+  medium: 600px,
+  large: 800px
+);
