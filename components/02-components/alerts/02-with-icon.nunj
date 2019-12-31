@@ -1,0 +1,11 @@
+{% render '@alert', {modifier: 'is-primary', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: 'fa-user', dismiss: false} %}
+
+{% render '@alert', {modifier: 'is-link', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: 'fa-user', dismiss: false} %}
+
+{% render '@alert', {modifier: 'is-info', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: 'fa-user', dismiss: false} %}
+
+{% render '@alert', {modifier: 'is-success', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: 'fa-user', dismiss: false} %}
+
+{% render '@alert', {modifier: 'is-warning', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: 'fa-user', dismiss: false} %}
+
+{% render '@alert', {modifier: 'is-danger', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: 'fa-user', dismiss: false} %}

@@ -1,0 +1,11 @@
+<div class="notification {{modifier}}">
+  {% if icon %}
+    <span><i class="fa {{icon}}" aria-hidden="true"></i></span>
+  {% endif %}
+
+  {% if dismiss %}
+    <button class="delete"></button>
+  {% endif %}
+
+  {{text}}
+</div>

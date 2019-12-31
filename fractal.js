@@ -26,6 +26,24 @@ fractal.web.set('static.path', path.join(__dirname, 'public'));
 // If you change the build destination, you should adapt webpack.common.js "output.path" too.
 fractal.web.set('builder.dest', 'dist');
 
+fractal.components.set('statuses', {
+  prototype: {
+    label: "Prototype",
+    description: "Do not implement.",
+    color: "#F67280"
+  },
+  wip: {
+    label: "WIP",
+    description: "Work in progress. Implement with caution.",
+    color: "#FFB270"
+  },
+  ready: {
+    label: "Ready",
+    description: "Ready to implement.",
+    color: "#2AAF74"
+  }
+})
+
 /**
  * Templating
  */

@@ -9,7 +9,7 @@ const subTheme = mandelbrot({
   styles: ['/subtheme/css/theme.css'],
   format: 'yaml',
   nav: ['docs', 'components'],
-  panels: ['html', 'notes', 'resources', 'info'],
+  panels: ['notes', 'html', 'resources', 'info'],
   favicon: '/subtheme/img/favicon.png'
 });
 
