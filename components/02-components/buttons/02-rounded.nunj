@@ -1,0 +1,6 @@
+<div class="buttons">
+  <button class="button is-rounded is-info">Info</button>
+  <button class="button is-rounded is-success">Success</button>
+  <button class="button is-rounded is-warning">Warning</button>
+  <button class="button is-rounded is-danger">Danger</button>
+</div>

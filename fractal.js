@@ -7,7 +7,7 @@ const pkg = require(path.join(__dirname, 'package.json'));
  * Metadata
  */
 
-fractal.set('project.title', 'Codebundle.io\'s Styleguide');
+fractal.set('project.title', 'Alpha: User-friendly, open source design system based on Bulma.io.');
 
 // Provide the package.json "version" to the templates
 fractal.set('project.version', pkg.version);

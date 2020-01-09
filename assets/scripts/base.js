@@ -2,3 +2,4 @@
 import 'scss/base.scss';
 
 import './components/alerts.js';
+import './components/navbar.js';
