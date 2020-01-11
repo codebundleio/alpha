@@ -19,9 +19,8 @@
   "main": "dist/base.js",
   "style": "dist/base.css",
   "files": [
-    ".eslintrc.js",
-    "assets/**/*",
-    "dist"
+    "dist/base.js",
+    "dist/base.css"
   ],
   "directories": {
     "lib": "dist"
