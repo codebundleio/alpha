@@ -1,4 +1,16 @@
 /node_modules/
-/dist
 /theme/node_modules/
 /theme/dist
+
+/dist/assets/
+/dist/components/
+/dist/docs/
+/dist/fonts/
+/dist/subtheme/
+/dist/themes/
+/dist/.gitkeep
+/dist/assets.html
+/dist/CNAME
+/dist/components.html
+/dist/docs.html
+/dist/index.html
