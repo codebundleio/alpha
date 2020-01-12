@@ -41,7 +41,11 @@
 @import "@frctl/mandelbrot/assets/scss/components/status";
 @import "@frctl/mandelbrot/assets/scss/components/tree";
 
+/**
+* Components customization
+*/
 @import "components/browser";
+@import "components/document";
 @import "components/frame";
 @import "components/header";
 @import "components/meta";

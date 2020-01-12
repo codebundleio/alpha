@@ -15,7 +15,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
-    filename: '[name].js',
+    filename: 'js/[name].js',
   },
   module: {
     rules: [
@@ -64,30 +64,15 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.svg$/,
-        exclude: path.resolve('./node_modules/font-awesome'),
-        use: [
-          {
-            loader: 'svg-sprite-loader',
-            options: {
-              extract: true,
-              spriteFilename: 'assets/sprite.svg',
-              esModule: false,
-            },
-          },
-          'svgo-loader',
-        ],
-      },
     ],
   },
   plugins: [
     new SpriteLoaderPlugin(),
-    new ExtractTextPlugin('[name].css'),
+    new ExtractTextPlugin('/css/[name].css'),
     new CopyWebpackPlugin([
       {
         from: 'node_modules/font-awesome/fonts',
-        to: 'assets',
+        to: 'fonts',
       },
     ]),
   ],
