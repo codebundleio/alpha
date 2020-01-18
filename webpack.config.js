@@ -10,7 +10,7 @@ module.exports = {
     extensions: ['.mjs', '.js'],
   },
   entry: {
-    base: path.resolve(__dirname, 'assets/scripts/base.js')
+    alpha: path.resolve(__dirname, 'assets/scripts/alpha.js')
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -71,8 +71,16 @@ module.exports = {
     new ExtractTextPlugin('/css/[name].css'),
     new CopyWebpackPlugin([
       {
-        from: 'node_modules/font-awesome/fonts',
-        to: 'fonts',
+        from: 'node_modules/@fortawesome/fontawesome-free/sprites',
+        to: 'fonts/fontawesome/sprites',
+      },
+      {
+        from: 'node_modules/@fortawesome/fontawesome-free/svgs',
+        to: 'fonts/fontawesome/svgs',
+      },
+      {
+        from: 'node_modules/@fortawesome/fontawesome-free/webfonts',
+        to: 'fonts/fontawesome/webfonts',
       },
     ]),
   ],

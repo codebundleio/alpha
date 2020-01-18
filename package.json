@@ -1,7 +1,7 @@
 {
   "name": "alpha-ds",
   "version": "0.1.0",
-  "description": "User-friendly, open source design system based on Bulma.io.",
+  "description": "A user-friendly, open-source design system based on Bulma.io, focused on a clean interface and looking for the best web accessibility.",
   "keywords": [
     "styleguide",
     "patterns",
@@ -16,11 +16,11 @@
   "private": true,
   "author": "Iván González",
   "license": "MIT",
-  "main": "dist/js/base.js",
-  "style": "dist/css/base.css",
+  "main": "dist/js/alpha.js",
+  "style": "dist/css/alpha.css",
   "files": [
-    "dist/js/base.js",
-    "dist/css/base.css"
+    "dist/js/alpha.js",
+    "dist/css/alpha.css"
   ],
   "directories": {
     "lib": "dist"

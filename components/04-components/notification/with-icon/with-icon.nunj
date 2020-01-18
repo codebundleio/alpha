@@ -1,0 +1,11 @@
+{% render '@base', {modifier: 'is-primary', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: 'fa-user', dismiss: false} %}
+
+{% render '@base', {modifier: 'is-link', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: 'fa-user', dismiss: false} %}
+
+{% render '@base', {modifier: 'is-info', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: 'fa-user', dismiss: false} %}
+
+{% render '@base', {modifier: 'is-success', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: 'fa-user', dismiss: false} %}
+
+{% render '@base', {modifier: 'is-warning', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: 'fa-user', dismiss: false} %}
+
+{% render '@base', {modifier: 'is-danger', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', icon: 'fa-user', dismiss: false} %}

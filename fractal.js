@@ -7,7 +7,7 @@ const pkg = require(path.join(__dirname, 'package.json'));
  * Metadata
  */
 
-fractal.set('project.title', 'Alpha: User-friendly, open source design system based on Bulma.io.');
+fractal.set('project.title', 'A user-friendly, open-source design system based on Bulma.io, focused on a clean interface and looking for the best web accessibility.');
 
 // Provide the package.json "version" to the templates
 fractal.set('project.version', pkg.version);

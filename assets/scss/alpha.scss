@@ -1,0 +1,11 @@
+// Main variables
+@import "./variables/colors";
+
+// @import "~font-awesome/scss/font-awesome";
+@import "~bulma/bulma";
+
+// Base
+@import "./base/typography";
+
+// Components
+@import "./components/navbar.scss";

@@ -1,4 +1,6 @@
-# Codebundle.io styleguides
+# Alpha DS
+
+A user-friendly, open-source design system based on Bulma.io, focused on a clean interface and looking for the best web accessibility.
 
 ## Installation
 

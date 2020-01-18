@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Preview Layout</title>
 
-    <link rel="stylesheet" href="{{ '/base.css' | path }}">
+    <link rel="stylesheet" href="{{ '/css/alpha.css' | path }}">
 
     <style>
       hr {
@@ -16,7 +16,7 @@
       }
     </style>
 
-    <script type="text/javascript" src="{{ '/base.js' | path }}"></script>
+    <script type="text/javascript" src="{{ '/js/alpha.js' | path }}"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600" rel="stylesheet">
   </head>
   <body>
