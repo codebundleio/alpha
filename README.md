@@ -29,8 +29,8 @@ You can now access your styleguide at [localhost:4321](http://localhost:4321).
 You’re all set, start to:
 
 - Create components as `.nunj` (Nunjucks) files inside the `components` directory
-- Write some style inside `assets/scss/base.scss`
-- Write JavaScript inside `assets/scripts/base.js`
+- Write some style inside `assets/scss/alpha.scss`
+- Write JavaScript inside `assets/scripts/alpha.js`
 - Put some `*.svg` icons in the `assets/icons` directory
 - Write documentation as `.md` (Markdown) files inside the `docs` directory.
 

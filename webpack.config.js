@@ -71,16 +71,8 @@ module.exports = {
     new ExtractTextPlugin('/css/[name].css'),
     new CopyWebpackPlugin([
       {
-        from: 'node_modules/@fortawesome/fontawesome-free/sprites',
-        to: 'fonts/fontawesome/sprites',
-      },
-      {
-        from: 'node_modules/@fortawesome/fontawesome-free/svgs',
-        to: 'fonts/fontawesome/svgs',
-      },
-      {
         from: 'node_modules/@fortawesome/fontawesome-free/webfonts',
-        to: 'fonts/fontawesome/webfonts',
+        to: 'fonts/fortawesome',
       },
     ]),
   ],
