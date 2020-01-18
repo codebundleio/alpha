@@ -24,7 +24,7 @@ To start the development server, run:
 npm start
 ```
 
-You can now access your styleguide at [localhost:4321](http://localhost:4321).
+You can now access your styleguide at [http://localhost:4321](http://localhost:4321).
 
 You’re all set, start to:
 

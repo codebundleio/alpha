@@ -10,7 +10,10 @@ module.exports = {
     extensions: ['.mjs', '.js'],
   },
   entry: {
-    alpha: path.resolve(__dirname, 'assets/scripts/alpha.js')
+    alpha: [
+      path.resolve(__dirname, 'assets/scripts/alpha.js'),
+      path.resolve(__dirname, 'assets/scss/alpha.scss')
+    ]
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
